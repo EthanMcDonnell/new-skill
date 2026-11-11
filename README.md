@@ -13,7 +13,10 @@ It walks through:
 ## Install
 
 ```bash
+git clone https://github.com/EthanMcDonnell/new-skill.git ~/Development/new-skill
 ln -s ~/Development/new-skill/skills/new-skill ~/.claude/skills/new-skill
 ```
+
+The symlink keeps the skill editable in place, and a `git pull` updates it. The skill assumes this `~/Development/<name>/` layout for new skills too; edit the "Installing" section of `SKILL.md` if you keep yours elsewhere.
 
 Then ask Claude to "make a skill for …" or run `/new-skill`.
